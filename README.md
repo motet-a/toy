@@ -21,7 +21,7 @@ self-compile and are magically bundled inside `toy` (in the generated
 - ES201{5,6,7}
 - Functions with many arguments (use arrays, dicts or curryfication
   instead)
-- Protoypes
+- Prototypes
 - Exceptions
 - `undefined` (seriously, who need `undefined`? `null` is sufficient)
 - Optional semicolons
