@@ -25,6 +25,7 @@ bytecode and are magically bundled inside `toy` (in the generated
 - Exceptions
 - `undefined` (seriously, who need `undefined`? `null` is sufficient)
 - Optional semicolons
+- Booleans (use 0 and 1, or anything else truthy or falsy)
 - `for`, `switch`, `do`
 - `else` (just write `if` statements. Thousands of `if` statements.)
 - Regexps
