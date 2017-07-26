@@ -1,18 +1,19 @@
 # toy
 
-This is a toy bytecode compiler and interpreter for a tiny subset of
-JavaScript.
+This is a small bytecode compiler and interpreter for a tiny subset of
+JavaScript. Less than 2500 lines of code.
 
 The parser and the bytecode generator (in `compile.js`) are written in
-toy-compatible JavaScript. You can run them with Node.js or toy
-itself. They self-compile to bytecode and are magically bundled inside
-`toy` (in the generated `compiler_code.c`).
+Toy-compatible JavaScript. It was just too painful to write those in
+C.  You can run them with Node.js or Toy itself. They self-compile to
+bytecode and are magically bundled inside `toy` (in the generated
+`compiler_code.c`).
 
 ## Interesting features
 
-- Closures.
-- Compiles itself (see above).
-- Little CPythonish garbage collector.
+- Closures
+- Compiles itself (see above)
+- Little CPythonish garbage collector
 
 ## Unsupported JavaScript features
 
