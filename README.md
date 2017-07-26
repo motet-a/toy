@@ -1,7 +1,8 @@
 # toy
 
-This is a small bytecode compiler and interpreter for a tiny subset of
-JavaScript. Less than 2500 lines of code.
+This is a tiny interpreter (with a bytecode compiler and a stack-based
+virtual machine) for a lilliputian subset of JavaScript, written in C
+and... JavaScript itself. Less than 2500 lines of code.
 
 The parser and the bytecode generator (in `compile.js`) are written in
 Toy-compatible JavaScript. It was just too painful to write those in
@@ -30,9 +31,13 @@ bytecode and are magically bundled inside `toy` (in the generated
 
 ## Compile and run
 
-You need Node.js, a C compiler and GNU make. Just run `make` and try
+You need Node.js[^node], a C compiler and GNU make. Just run `make` and try
 the examples.
 
 ## Why?
 
 It was fun.
+
+[^node]: Actually, you don’t even need Node.js to compile Toy since
+the bytecode is architecture-independent. You can perfecly use a
+`compiler_code.c` generated on another machine.
