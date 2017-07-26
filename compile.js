@@ -52,8 +52,8 @@ var parse = function (source) {
     var index = 0; // Don't set directly. Use setIndex().
     var farthestIndex = 0; // Only used for error management.
 
-    // IMPORTANT: Most of the following parsing function returns a falsy
-    // value on failure, or the read substring on success.
+    // Most of the following parsing functions return a falsy value on
+    // failure, or the read substring on success.
 
     var setIndex = function (newIndex) {
         index = newIndex;
