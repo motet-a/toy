@@ -32,13 +32,15 @@ bytecode and are magically bundled inside `toy` (in the generated
 
 ## Compile and run
 
-You need Node.js[^node], a C compiler and GNU make. Just run `make` and try
-the examples.
+You need Node.js<sup>1</sup>, a C compiler and GNU make. Just run
+`make` and try the examples.
 
 ## Why?
 
-It was fun.
+It was fun. Enjoy :wink:
 
-[^node]: Actually, you don’t even need Node.js to compile Toy since
+----------------
+
+<sup>1</sup>: Actually, you don’t even need Node.js to compile Toy since
 the bytecode is architecture-independent. You can perfecly use a
 `compiler_code.c` generated on another machine.
