@@ -1,0 +1,30 @@
+
+// Look in `vm.c` and the code generation in `compile.js` in order to
+// understand /what these instructions are doing.
+
+X(return) // Must be the first one.
+
+X(add) X(sub) X(mul) X(div) X(mod)
+X(and) X(or) X(eq) X(neq)
+X(gt) X(lt) X(gte) X(lte)
+X(not) X(typeof) X(unary_minus)
+
+X(set) X(get) X(in)
+
+X(load_empty_list) X(load_empty_dict)
+X(load_null)
+X(load_func)
+X(load_const)
+X(load_var)
+X(store_var)
+X(decl_var)
+
+X(goto) X(goto_if)
+
+X(call)
+
+X(dup) X(pop) X(rot)
+
+X(list_push) X(dict_push)
+
+X(_count) // Must be the last one.
