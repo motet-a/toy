@@ -29,7 +29,8 @@ itself. They self-compile to bytecode and are magically bundled inside
 
 ## Compile and run
 
-You need Node.js, a C compiler and GNU make. Just run `make`.
+You need Node.js, a C compiler and GNU make. Just run `make` and try
+the examples.
 
 ## Why?
 
