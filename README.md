@@ -7,8 +7,8 @@ and... JavaScript itself. It fits in less than 2500 lines of code.
 The parser and the bytecode generator (in `compile.js`) are written in
 Toy-compatible JavaScript. It was just too painful to write those in
 C.  Since you can run them with Node.js or Toy itself, they
-self-compile and are magically bundled inside `toy` (in the generated
-`compiler_code.c`).
+self-compile (into `compiler_code.c`) and are magically bundled inside
+the `toy` executable.
 
 ## Interesting features
 
