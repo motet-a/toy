@@ -39,7 +39,7 @@ the examples.
 
 First of all, because I hate naming things _à la_ JavaScript:
 
-  - an _object_, a _hash map_ or a _hash table __ is _dictionnary_
+  - an _object_, a _hash map_ or a _hash table_ is _dictionnary_
   - an _array_ is a _list_
 
 For the sake of simplicity, the whole thing is really slow.
