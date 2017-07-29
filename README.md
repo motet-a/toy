@@ -14,7 +14,7 @@ the `toy` executable.
 
 - Closures
 - Compiles itself (see above)
-- Little mark-and-sweep CPythonish garbage collector
+- Little mark-and-sweep garbage collector
 
 ## Unsupported JavaScript features
 
