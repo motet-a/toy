@@ -23,7 +23,7 @@ self-compile and are magically bundled inside `toy` (in the generated
   instead)
 - Prototypes
 - Exceptions
-- `undefined` (seriously, who need `undefined`? `null` is sufficient)
+- `undefined` (seriously, who needs `undefined`? `null` is sufficient)
 - Optional semicolons
 - Booleans (use 0 and 1, or anything else truthy or falsy)
 - `for`, `switch`, `do`
