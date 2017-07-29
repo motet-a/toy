@@ -98,7 +98,6 @@ static compiled_func_t translate_compiled_func(value_t vfunc) {
     return (compiled_func_t){
         .param_name = v_to_string(v_get(vfunc, v_string("paramName"))),
         .code = code,
-        .code_length = code_length,
         .consts = consts,
         .const_count = const_count,
     };

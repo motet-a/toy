@@ -104,7 +104,7 @@ var parse = function (source) {
         return readCharIf(isLetter);
     };
     var whitespace = function () {
-        // That's bit hackish for performance reason.
+        // That's bit hackish for performance reasons.
         while (1) {
             if (source[index] === '/' && source[index + 1] === '/') {
                 setIndex(index + 2);
@@ -713,6 +713,9 @@ var compileFunctionBody = function (statements) {
     };
 
     compileStatements(statements);
+    code.push('load_null');
+    code.push('return');
+
     return {consts, code};
 };
 

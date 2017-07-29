@@ -16,10 +16,9 @@ typedef struct compiled_file compiled_file_t;
 struct compiled_func {
     char *param_name; // may be null
     unsigned char *code;
-    size_t code_length; // TODO: remove
     value_t *consts;
     struct bvalue *bconsts;
-    size_t const_count; // TODO: remove?
+    size_t const_count;
     compiled_file_t *file;
 };
 

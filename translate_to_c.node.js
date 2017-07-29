@@ -57,8 +57,6 @@ var translateFunction = function (compiled) {
     }
     emit('  },\n');
 
-    emit('  .code_length = ' + compiled.code.length + ',\n');
-
     var consts = compiled.consts;
 
     // https://gcc.gnu.org/bugzilla/show_bug.cgi?id=65673

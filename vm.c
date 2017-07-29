@@ -115,12 +115,7 @@ value_t eval_func(value_t funcv, value_t scope) {
 #define push(v) stack_push(&stack, (v))
 #define pop()   stack_pop(&stack)
 
-#define peek_opcode(offset)                                     \
-    ({                                                          \
-        ptrdiff_t peek__index = ip + (offset);                  \
-        peek__index < (ptrdiff_t)comp->code_length ?            \
-            comp->code[peek__index] : opcode_return;            \
-    })
+#define peek_opcode(offset) (comp->code[ip + (offset)])
 
 #define next_opcode()                           \
     ({                                          \
