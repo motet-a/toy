@@ -1,6 +1,6 @@
 
-// Look in `vm.c` and the code generation in `compile.js` in order to
-// understand /what these instructions are doing.
+// See `vm.c` and the code generation in `compile.js` in order to
+// understand what these instructions are doing.
 
 X(return) // Must be the first one.
 
