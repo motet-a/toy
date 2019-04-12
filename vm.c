@@ -62,16 +62,16 @@ value_t call_func(value_t func, value_t arg) {
     return result;
 }
 
-typedef struct stack stack_t;
+typedef struct stackk stackk_t;
 
 #define STACK_CAPACITY 20
 
-struct stack {
+struct stackk {
     value_t list[STACK_CAPACITY];
     size_t size;
 };
 
-static value_t stack_pop(stack_t *stack) {
+static value_t stack_pop(stackk_t *stack) {
     if (!stack->size) {
         die("stack underflow");
     }
@@ -80,14 +80,14 @@ static value_t stack_pop(stack_t *stack) {
     return value;
 }
 
-static value_t stack_get_top(const stack_t *stack) {
+static value_t stack_get_top(const stackk_t *stack) {
     if (!stack->size) {
         die("empty stack");
     }
     return stack->list[stack->size - 1];
 }
 
-static void stack_push(stack_t *stack, value_t value) {
+static void stack_push(stackk_t *stack, value_t value) {
     if (stack->size == STACK_CAPACITY) {
         die("stack overflow");
     }
@@ -95,7 +95,7 @@ static void stack_push(stack_t *stack, value_t value) {
     stack->list[stack->size++] = value;
 }
 
-static void stack_flush(stack_t * stack) {
+static void stack_flush(stackk_t * stack) {
     for (size_t i = 0; i < stack->size; i++) {
         v_dec_ref(stack->list[i]);
     }
@@ -107,7 +107,7 @@ value_t eval_func(value_t funcv, value_t scope) {
     v_inc_ref(scope);
     func_t *func = &funcv.object->func;
     const compiled_func_t *comp = func->compiled;
-    stack_t stack = {};
+    stackk_t stack = {};
     size_t ip = 0;
 
 #define tos (stack_get_top(&stack))
